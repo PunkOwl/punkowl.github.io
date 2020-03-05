@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+body {
+    width: 100%;
+    margin: 0;
+    margin-top: 0;
+    background-color: #f9f9fa;
+}
+
+a {
+    color: aqua;
+}
+
+.center {
+    display: table;
+    margin: 0 auto;
+}
+
+.home-container {
+    margin-top: 8%;
+}
+.home-menu {
+    margin-top: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    color: #282828;
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.home-menu > li > div {
+    /* text-transform: uppercase; */
+    background-color: #282828;
+    margin-bottom: 10px;
+    color: #f9f9fa;
+    padding: 10px 5px;
+}
+
+.punkowl {
+    padding: 5px 15px;
+    background-color: #282828;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+.punkowl-subtitle {
+    font-family: 'Lato', sans-serif;
+    border: 3px solid #282828;
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer-container {
+    margin-top: 110px;
+    padding: 5px;
+    background-color: transparent;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.footer-content {
+    text-align: center;
+    line-height: 25px;
+}
