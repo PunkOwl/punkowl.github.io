@@ -30,8 +30,9 @@ export default function Projects() {
                 {
                     'text_en': Lang.BTN_MORE_EN,
                     'text_mn': Lang.BTN_MORE_MN,
-                    'url': '/p/colornotecode/',
-                    'is_active': true,
+                    'url': '',
+                    // 'url': '/p/colornotecode/',
+                    'is_active': false,
                     'is_route': true
                 }
             ]

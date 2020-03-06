@@ -157,10 +157,10 @@ a {
 }
 
 .about-container {
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin: auto;
+    max-width: 900px;
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .footer-container {
@@ -173,4 +173,8 @@ a {
 .footer-content {
     text-align: center;
     line-height: 25px;
+}
+
+.timeline-block {
+    margin-top: 50px;
 }

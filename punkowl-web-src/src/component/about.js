@@ -1,12 +1,36 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Timeline, Bookmark, Marker } from 'react-vertical-timeline';
 import * as Lang from '../language';
-
+import { Timeline, Event } from 'react-trivial-timeline';
 
 export default function About() {
 
+    const [lang, setLang] = useState('mn');
+    const members = [
+        {
+            'name': 'vonqo'
+        }
+    ];
+    const gratitudes = [
+        {
+            'name': 'Even Tide'
+        }
+    ];
+    const timeline_en = [
+        {
+            'date': '2018 - *',
+            'component': <div></div>
+        }
+    ];
+    const timeline_mn = [
+        {
+            'date': '2018 - *',
+            'component': <div></div>
+        }
+    ]
+
     return (
+
         <div>
             <div className="punkowl sml"><Link to="/" className="no-underline white-text">{Lang.LOGO_TEXT} / <span className="head-path">[{Lang.MENU_ABOUT}]</span></Link></div>
             <div className="ribbon-space">
@@ -21,46 +45,56 @@ export default function About() {
     );
 
     function renderAbout() {
-
-        // TODO: implement
         return (
-            <div></div>
+            <div>
+                <p>
+                    {(lang === 'en') ? Lang.ABOUT_EN : Lang.ABOUT_MN}
+                </p>
+            </div>
         );
     }
 
     function renderMembers() {
-
-        // TODO: implement
         return (
-            <div></div>
+            <div>
+                <div><h3>{(lang === 'en') ? Lang.TITLE_MEMBERS_EN : Lang.TITLE_MEMBERS_MN}</h3></div>
+                {members.map((member, key) => {
+                    return (
+                    <span>{member.name}</span>
+                    );
+                })}
+            </div>
         );
     }
 
     function renderGratitude() {
-        // TODO: implement
         return (
-            <div></div>
+            <div>
+                <div><h3>{(lang === 'en') ? Lang.TITLE_GRATITUDE_EN : Lang.TITLE_GRATITUDE_MN}</h3></div>
+                {gratitudes.map((gratitude, key) => {
+                    return (
+                        <span>{gratitude.name}</span>
+                    );
+                })}
+            </div>
         );
     }
 
     function renderTimeline() {
+        var timeline = (lang === 'en') ? timeline_en : timeline_mn;
         return (
-            <div></div>
+            <div className="timeline-block">
+                <Timeline lineColor="black">
+                    {timeline.map((event, key) => {
+                        return (
+                            <Event interval={event.date} title="Event title" subtitle="Subtitle">
+                                {event.component}
+                            </Event>
+                        );
+                    })}
+                </Timeline>
+            </div>
         );
-        // return (
-        //     <Timeline height={300} progress={ progress } onSelect={p => setProgress(p)}>
-        //         <Bookmark progress={20} onSelect={p => setProgress(p)}>
-        //             Hi there 20%
-        //         </Bookmark>
-        //         <Marker progress={33}/>
-        //         <Bookmark progress={55} onSelect={p => setProgress(p)}>
-        //             Hi there 55%
-        //         </Bookmark>
-        //         <Bookmark progress={75} onSelect={p => setProgress(p)}>
-        //             Hi there 75%
-        //         </Bookmark>
-        //     </Timeline>
-        // )
     }
 }
 
