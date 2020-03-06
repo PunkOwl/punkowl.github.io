@@ -1,21 +1,22 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import * as Lang from '../language';
 
 export default function Home() {
     return (
         <div className="home-container">
             <div className="center">
-                <div className="punkowl">PunkOwl</div>
-                <div className="punkowl-subtitle">programming as poetry @ ulaanbaatar</div>
+            <div className="punkowl">{Lang.LOGO_TEXT}</div>
+                <div className="punkowl-subtitle">{Lang.LOGO_SUBTEXT}</div>
                 <ul className="home-menu">
                     <li>
-                        <Link className="no-underline" to="/projects"><div>projects_төслүүд</div></Link>
+                        <Link className="no-underline" to="/projects"><div>{Lang.MENU_PROJECTS}</div></Link>
                     </li>
                     <li>
-                        <Link className="no-underline" to="/about"><div>about_тухай</div></Link>
+                        <Link className="no-underline" to="/about"><div>{Lang.MENU_ABOUT}</div></Link>
                     </li>
                     <li>
-                        <Link className="no-underline" to="/"><div>developerNote_тэмдэглэл</div></Link>
+                        <Link className="no-underline" to="/"><div>{Lang.MENU_DEVNOTE}</div></Link>
                     </li>
                 </ul>
             </div>
