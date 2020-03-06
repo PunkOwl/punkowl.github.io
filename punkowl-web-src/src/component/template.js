@@ -1,9 +1,13 @@
 import React from 'react';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import '../asset/punk-style.css';
 
 export default function Template(props) {
     return (
         <main>
+            <ScrollToTop/>
             {props.children}
             <footer>
                 <div className="footer-container">
@@ -20,3 +24,12 @@ export default function Template(props) {
     );
 }
 
+function ScrollToTop() {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import * as Lang from '../language';
+import Header from './common/header';
 
 export default function Projects() {
 
@@ -42,8 +43,7 @@ export default function Projects() {
     return (
         <div>
             <div className="punkowl sml"><Link to="/" className="no-underline white-text">{Lang.LOGO_TEXT} / <span className="head-path">[{Lang.MENU_PROJECTS}]</span></Link></div>
-            <div className="ribbon-space">
-            </div>
+            <Header/>
             {renderLanguage()}
             <div className="project-container">
                 {renderProjects(projects)}

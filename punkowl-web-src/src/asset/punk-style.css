@@ -79,10 +79,13 @@ a {
     background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.ribbon-space {
+.header-space {
     height: 100px;
     width: 100%;
-    background: #000000
+    background: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #fff;
 }
 
 .project-container {
@@ -131,6 +134,7 @@ a {
     color: white;
     font-weight: bold;
     border: 0px solid #fff;
+    font-size: 14px;
     padding: 10px 15px;
     margin-top: 5px;
     margin-left: 5px;
@@ -175,6 +179,76 @@ a {
     line-height: 25px;
 }
 
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.members-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.member-container {
+    max-width: 180px;
+    text-align: center;
+    font-size: 14px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    padding: 2px;
+}
+
+.about-text {
+    font-size: 16px;
+}
+
+.grat-name {
+    font-size: 16px;
+}
+
+.grat-text {
+    margin-left: 3px;
+    font-size: 13px;
+    padding: 2px;
+    background-color: #b3e096;
+}
+
 .timeline-block {
     margin-top: 50px;
 }
+
+/* Cursor Styling */
+.cursor::after {
+    content:'';
+    display:inline-block;
+    margin-left:3px;
+    background-color:white;
+    animation-name:blink;
+    animation-duration:0.5s;
+    animation-iteration-count: infinite;
+  }
+  h1.cursor::after {
+    height:24px;
+    width:13px;
+  }
+  p.cursor::after {
+    height:13px;
+    width:6px;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity:1;
+    }
+    49% {
+      opacity:1;
+    }
+    50% {
+      opacity:0;
+    }
+    100% {
+      opacity:0;
+    }
+  }
