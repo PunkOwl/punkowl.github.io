@@ -2,6 +2,8 @@ import React from 'react';
 
 export default function About() {
     return (
-        <div></div>
+        <div>
+            <div className="punkowl sml">PunkOwl</div>
+        </div>
     );
 }

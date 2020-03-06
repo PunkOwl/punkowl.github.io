@@ -10,8 +10,9 @@ export default function Template(props) {
                     <div className="center footer-content">
                         {/* Language: EN / MN  */}
                         <br/>
-                        Github: <b><a href="https://github.com/PunkOwl/">github.com/PunkOwl</a></b>
+                        Github: <b><a rel="noopener noreferrer" target={"_blank"} href="https://github.com/PunkOwl/">github.com/PunkOwl</a></b>
                         <br/>
+                        © {(new Date().getFullYear())}
                     </div>
                 </div>
             </footer>

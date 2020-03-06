@@ -9,7 +9,7 @@ body {
 }
 
 a {
-    color: aqua;
+    color: black;
 }
 
 .center {
@@ -30,12 +30,23 @@ a {
     padding-left: 0px;
 }
 
-.home-menu > li > div {
+.home-menu > li > a > div {
     /* text-transform: uppercase; */
     background-color: #282828;
     margin-bottom: 10px;
     color: #f9f9fa;
     padding: 10px 5px;
+    border-bottom: 3px solid #24abbd;
+    border-right: 3px solid #f78928;
+}
+
+.home-menu > li > a > div:hover {
+    border-bottom: 3px solid #00f2ff;
+    border-right: 3px solid #ff6a00;
+}
+
+.no-underline {
+    text-decoration: none;
 }
 
 .punkowl {
@@ -46,6 +57,36 @@ a {
     font-size: 48px;
     font-weight: bold;
 }
+
+.sml {
+    font-size: 28px;
+    padding-left: 30px;
+}
+
+.gradient-bg-prj {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.b-space {
+    height: 80px;
+}
+
+.project-container {
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.project-item {
+    background-color: #121212;
+    color: #f9f9f9;
+    width: 300px;
+    margin: 10px;
+    padding: 5px;
+}
+
 .punkowl-subtitle {
     font-family: 'Lato', sans-serif;
     border: 3px solid #282828;

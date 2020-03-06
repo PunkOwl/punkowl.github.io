@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 export default function Home() {
     return (
@@ -8,13 +9,13 @@ export default function Home() {
                 <div className="punkowl-subtitle">programming as poetry @ ulaanbaatar</div>
                 <ul className="home-menu">
                     <li>
-                        <div>[ _projects ]</div>
+                        <Link className="no-underline" to="/projects"><div>projects_төслүүд</div></Link>
                     </li>
                     <li>
-                        <div>[ _about ]</div>
+                        <Link className="no-underline" to="/about"><div>about_тухай</div></Link>
                     </li>
                     <li>
-                        <div>[ _developerNote ]</div>
+                        <Link className="no-underline" to="/"><div>developerNote_тэмдэглэл</div></Link>
                     </li>
                 </ul>
             </div>
