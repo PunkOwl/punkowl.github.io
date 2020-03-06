@@ -14,6 +14,7 @@ export default function About() {
             <div className="about-container">
                 {renderAbout()}
                 {renderMembers()}
+                {renderGratitude()}
                 {renderTimeline()}
             </div>
         </div>
@@ -29,6 +30,13 @@ export default function About() {
 
     function renderMembers() {
 
+        // TODO: implement
+        return (
+            <div></div>
+        );
+    }
+
+    function renderGratitude() {
         // TODO: implement
         return (
             <div></div>

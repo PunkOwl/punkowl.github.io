@@ -17,19 +17,22 @@ export default function Projects() {
                     'text_en': 'Facebook',
                     'text_mn': 'Facebook',
                     'url': 'https://www.facebook.com/colornotecode/',
-                    'is_active': true
+                    'is_active': true,
+                    'is_route': false
                 },
                 {
                     'text_en': Lang.BTN_REPO,
                     'text_mn': Lang.BTN_REPO,
-                    'url': 'https://github.com/PunkOwl/gestalt',
-                    'is_active': true
+                    'url': 'https://github.com/PunkOwl/gestalt/',
+                    'is_active': true,
+                    'is_route': false
                 },
                 {
                     'text_en': Lang.BTN_MORE_EN,
                     'text_mn': Lang.BTN_MORE_MN,
-                    'url': '',
-                    'is_active': false
+                    'url': '/p/colornotecode/',
+                    'is_active': true,
+                    'is_route': true
                 }
             ]
         }
@@ -74,7 +77,7 @@ export default function Projects() {
                                 var text = '';
                                 if(lang === 'en') text = action.text_en;
                                 else if(lang === 'mn') text = action.text_mn;
-                                return renderUrlButton(text, action.url, action.is_active)
+                                return renderUrlButton(text, action.url, action.is_active, action.is_route)
                             })}
                         </div>
                     </div>
@@ -83,10 +86,12 @@ export default function Projects() {
         );
     }
 
-    function renderUrlButton(text, url, is_active) {
+    function renderUrlButton(text, url, is_active, is_route) {
         var classes = "project-btn"
         if(!is_active) classes += " btn-disabled"
-        if(url === '') return <button className={classes}>{text}</button>
-        return <a className="no-underline" href={url} target="_blank" rel="noopener noreferrer"><button className={classes}>{text}</button></a>
+        var button = <button className={classes}>{text}</button>;
+        if(url === '') return button;
+        if(is_route) return <Link to={url+lang}>{button}</Link> 
+        return <a className="no-underline" href={url} target="_blank" rel="noopener noreferrer">{button}</a>
     }
 }
