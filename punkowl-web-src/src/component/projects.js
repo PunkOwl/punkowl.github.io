@@ -5,14 +5,14 @@ import Header from './common/header';
 
 export default function Projects() {
 
-    const [lang, setLang] = useState('mn');
+    const [lang, setLang] = useState('en');
 
     const [projects, setProjects] = useState([
         {
             'title': 'Gestalt & ColorNoteCode',
             'image': '',
-            'desc_en': 'Creative coding integrations',
-            'desc_mn': 'Мэдкүү мэдкүү',
+            'desc_en': 'Creative coding integrations. ',
+            'desc_mn': 'Чөлөөт кодчилолын интеграцууд. ',
             'actions': [
                 {
                     'text_en': 'Facebook',

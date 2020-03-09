@@ -83,9 +83,18 @@ a {
     height: 100px;
     width: 100%;
     background: #000000;
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Ubuntu', sans-serif;
     text-align: center;
-    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-text{
+    color: #4c6169;
+    font-weight: normal;
+    font-size: 18px;
 }
 
 .project-container {

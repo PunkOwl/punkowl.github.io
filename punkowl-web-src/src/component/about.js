@@ -6,7 +6,7 @@ import Header from './common/header';
 
 export default function About() {
 
-    const [lang, setLang] = useState('mn');
+    const [lang, setLang] = useState('en');
     const members = [
         {
             'name': 'vonqo',

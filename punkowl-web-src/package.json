@@ -11,8 +11,8 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "react-trivial-timeline": "^1.2.2",
-    "react-typist": "^2.0.5",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.0.1",
+    "use-dencrypt-effect": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
