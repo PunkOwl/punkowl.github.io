@@ -17,7 +17,7 @@ export default function About() {
         {
             'name': 'Even Tide',
             'text_en': '[music band] Collaboration on Color, Note, Code',
-            'text_mn': '[хамтлаг] Color, Note, Code дээрхи хамтийн ажиллагаа',
+            'text_mn': '[хамтлаг] Color, Note, Code дээр хамтарч ажиллсан',
         }
     ];
     const timeline = [
@@ -28,6 +28,14 @@ export default function About() {
             'color': '#282828'
         }
     ];
+
+    const ABOUT_EN = <p className="about-text">Just a bunch of losers.
+        <br/><br/>Modern programming has become influential and boundless digital playground. We are commited to craft something in this playground that might help someone.
+    </p>;
+    const ABOUT_MN = <p className="about-text">Хэдэн сугууд.
+        <br/><br/>Орчин үеийн програмчлал нь нөлөө бүхий, зах хязгааргүй дижитал тоглоомын талбай болжээ. Бид энэ тоглоомын талбайдаа хэн нэгэнд тус болох ямар нэгэн зүйлийг хийх эрмэлзэлтэй билээ.
+    </p>;
+
 
     return (
         <div>
@@ -59,9 +67,7 @@ export default function About() {
     function renderAbout() {
         return (
             <div>
-                <p className="about-text">
-                    {(lang === 'en') ? Lang.ABOUT_EN : Lang.ABOUT_MN}
-                </p>
+                {(lang === 'en') ? ABOUT_EN : ABOUT_MN}
             </div>
         );
     }
