@@ -1,0 +1,37 @@
+.title {
+    color: white;
+}
+
+#background-wave {
+    position: absolute;
+}
+
+.home-wrapper {
+    background-color: white;
+    text-align: left;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 350px;
+}
+
+.home-text {
+    padding: 5px 15px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+    color: black
+}
+
+.home-logo {
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
