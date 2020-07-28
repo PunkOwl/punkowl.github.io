@@ -14,12 +14,11 @@ let backgroundGlitch = function(p) {
 
     p.preload = function() {
         img = p.loadImage('https://upload.wikimedia.org/wikipedia/commons/b/b1/John_Leak_P02939.jpg');
-        img.resize(500,500);
     }
 
 
     p.setup = function() {
-        p.createCanvas(p.windowWidth/2, p.windowHeight/2);
+        p.createCanvas(300, 300);
         p.background(0);
         p.image(img, -maxXChange, -maxYChange);
         for (let i = 0; i < 100; i++) {

@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <meta author="vonqo">
-        <title>Color Note Code</title>
+        <title>PunkOwl - Programming as Poetry</title>
         <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/scene.css">
@@ -17,76 +17,188 @@
         </style>
     </head>
     <body>
-          <div class="debug">
-            <label><input type="checkbox"> Debug</label>
-          </div>
-
-          <!-- <div class="footer__info">
-              PunkOwl <img src="resource/by-sa.svg" alt="by-sa 2.0">
-          </div> -->
-        
-          <div class="parallax">
-            <div id="group1" class="parallax__group">
-              <!-- Wave effect base layer -->
-              <div class="parallax__layer parallax__layer--base">
-                <div id="background-wave">  
+        <div class="parallax">
+          <div id="group2" class="parallax__group">
+            <div class="parallax__layer parallax__layer--base">
+              <!-- =========== PUNKOWL =========== -->
+              <div class="home-wrapper">
+                <div class="home-logo">
+                  <div class="logo-wrapper">
+                    <img src="resource/wiser-logo.svg" height="18"/>
+                  </div>
+                  <div class="logo-wrapper">
+                    <img src="resource/punkowl-logo.png" height="50"/>
+                  </div>
                 </div>
-                <script>
-                  new p5(backgroundWave, window.document.getElementById('background-wave'))
-                </script>
-                <div class="home-wrapper">
-                  <div class="home-logo">
-                    <div class="logo-wrapper">
-                      <img src="resource/wiser-logo.svg" height="18"/>
-                    </div>
-                    <div class="logo-wrapper">
-                      <img src="resource/punkowl-logo.png" height="50"/>
+                <div class="home-text"><b>PunkOwl</b> is a creative coding group that founded in <b>wiserstudio</b> @ Ulaanbaatar</div>
+              </div>
+              <!-- =========== PUNKOWL END =========== -->
+            </div>
+            <div class="parallax__layer parallax__layer--back">
+              <div id="background-wave"></div>
+              <script> 
+                let backgroundWaveP5 = new p5(backgroundWave, window.document.getElementById('background-wave')); 
+                setInterval(function(){ 
+                  backgroundWaveP5.clear();
+                  backgroundWaveP5.reset();
+                }, 35000);
+              </script>
+            </div>
+          </div>
+          <div id="group3" class="parallax__group">
+            <div class="parallax__layer parallax__layer--fore">
+
+              <!-- =========== PROJECTS =========== -->
+              <div class="project-wrapper">
+                <!-- --------------------  -->
+                <div class="project-header">
+                  Projects ://
+                </div>
+                <div class="project-item">
+                  <div class="project-logo">
+                    <img src="resource/gestalt-logo.png" width="150" alt="Color Note Code">
+                    <img src="resource/cnc-logo.png" width="150" alt="Color Note Code">
+                  </div>
+                  <div class="project-details">
+                    <div class="project-title">ColorNoteCode - Gestalt</div>
+                    <div class="project-desc">Open source collection of creative coding sketches and software integrations.</div>
+                    <hr/>
+                    <div class="project-links">
+                    <ul>
+                      <li>
+                        Github: <a href="https://github.com/PunkOwl/gestalt" target="_blank">PunkOwl/gestalt</a>
+                      </li>
+                      <li>
+                        Facebook: <a href="https://www.facebook.com/colornotecode/" target="_blank">Color, Note and Code</a>
+                      </li>
+                      <li>
+                        Instagram: <a href="https://www.instagram.com/colornotecode/" target="_blank">@colornotecode</a>
+                      </li>
+                      <li>
+                        Youtube: <a href="https://www.youtube.com/c/EnkhAmarLPgg/featured" target="_blank">vonqo</a>
+                      </li>
+                    </ul>
+
                     </div>
                   </div>
-                  <div class="home-text"><b>PunkOwl</b> is a creative coding group that founded in <b>wiserstudio</b> @ Ulaanbaatar</div>
+                </div>
+                 <!-- --------------------  -->
+                <div class="project-item">
+                  <div class="project-logo">
+
+                  </div>
+                  <div class="project-details">
+                    <div class="project-title">Devola</div>
+                    <div class="project-desc">Open source real-time music visualizer with various form of input/output. Specially designing for live music performance.</div>
+                    <hr/>
+                    <ul class="project-links">
+                      <li>
+                        Github: <a href="https://github.com/PunkOwl/devola" target="_blank">PunkOwl/devola</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- --------------------  -->
+                <div class="project-item">
+                  <div class="project-logo">
+                    
+                  </div>
+                  <div class="project-details">
+                    <div class="project-title">Unnamed Game Project</div>
+                    <div class="project-desc">A minimal video game heavily inspired from Yoko Taro's narrative.</div>
+                    <ul class="project-links"></ul>
+                  </div>
                 </div>
               </div>
+              <!-- =========== PROJECTS END =========== -->
+
             </div>
-            <div id="group2" class="parallax__group">
-              <div class="parallax__layer parallax__layer--base">
-                <div class="title">Base Layer 2</div>
-              </div>
-              <div class="parallax__layer parallax__layer--back">
-                <div class="title">Back layer</div>
-              </div>
-            </div>
-            <div id="group3" class="parallax__group">
-              <div class="parallax__layer parallax__layer--fore">
-                <div class="title">Foreground Layer</div>
-              </div>
-              <div class="parallax__layer parallax__layer--base">
-                <div class="title">Base Layer</div>
-              </div>
-            </div>
-            <div id="group4" class="parallax__group">
-              <div class="parallax__layer parallax__layer--base">
-                <div class="title">Base Layer</div>
-              </div>
-              <div class="parallax__layer parallax__layer--back">
-                <div></div>
-                <div class="title">Back Layer</div>
-              </div>
-              <!-- Glitch effect deep layer -->
-              <div class="parallax__layer parallax__layer--deep">
-                <div id="background-deep"></div>
-                <script>
-                  new p5(backgroundGlitch, window.document.getElementById('background-deep'))
-                </script>
-              </div>
+            <div class="parallax__layer parallax__layer--base">
+
+              <!-- =========== CHAPEL-BG =========== -->
+              <div class="chapel"></div>
+              <!-- =========== CHAPEL-BG END =========== -->
+
             </div>
           </div>
-          <script type="text/javascript">
-                var debugInput = document.querySelector("input");
-                function updateDebugState() {
-                    document.body.classList.toggle('debug-on', debugInput.checked);
-                }
-                debugInput.addEventListener("click", updateDebugState);
-                updateDebugState();
-          </script>
+          <div id="group4" class="parallax__group">
+            <div class="parallax__layer parallax__layer--base">
+
+              <!-- =========== MEMBERS AND COLLABORATORS =========== -->
+              <div class="member-wrapper">
+                <div class="member-group">
+                  <div class="member-title">Members ://</div>
+                  <div class="member-desc">
+                    <ul>
+                      <li>vonqo</li>
+                      <li>dulz</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="member-group">
+                  <div class="member-title">Collaborators ://</div>
+                  <div class="member-desc">
+                    <ul>
+                      <li><b><a href="https://www.youtube.com/channel/UCOKjCOczj8nTuchpmhaaWTQ/videos" target="_blank">Even Tide</a></b> / Music visualization and promotion</li>
+                      <li><b><a href="https://www.instagram.com/projectdulaan/" target="_blank">projectdulaan</a></b> / Support</li>
+                      <li><b>Zorigt, Jargalkhurts</b> / Game development</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- =========== MEMBERS AND COLLABORATORS =========== -->
+
+            </div>
+            <div class="parallax__layer parallax__layer--back">
+              <div class="glitch-wrapper">
+                <!-- <div id="glitch-effet"></div>
+                <script> 
+                  let glitchEffectP5 = new p5(backgroundGlitch, window.document.getElementById('glitch-effet')); 
+                </script> -->
+              </div>
+            </div>
+            <div class="parallax__layer parallax__layer--deep">
+
+              <!-- =========== NOISE-BG =========== -->
+              <div id="noise"></div>
+              <!-- =========== NOISE-BG END =========== -->
+
+            </div>
+          </div>
+          <div id="group5" class="parallax__group">
+            <div class="parallax__layer parallax__layer--fore">
+              <div class="thanks">Thanks for scrolling by. You are awesome!</div>
+            </div>
+            <div class="parallax__layer parallax__layer--base">
+              
+              <!-- TODO -->
+
+            </div>
+          </div>
+          <!-- <div id="group6" class="parallax__group">
+            <div class="parallax__layer parallax__layer--back">
+              <div class="title">Background Layer</div>
+            </div>
+            <div class="parallax__layer parallax__layer--base">
+              <div class="title">Base Layer</div>
+            </div>
+          </div>
+          <div id="group7" class="parallax__group">
+            <div class="parallax__layer parallax__layer--base">
+              <div class="title">Base Layer</div>
+            </div>
+          </div> -->
+        </div>
+        
+        <script>
+          window.addEventListener("resize", handleResize);
+          
+          function handleResize() {
+            
+          }
+
+          handleResize();
+        </script>
+          
     </body>
 </html>

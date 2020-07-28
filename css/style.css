@@ -1,14 +1,13 @@
-@import "compass/css3";
+@import "compass/css3";=
 
-
-.footer__info {
+.footer__info{
 position: absolute;
-
+font-size:14px;
+font-family: 'Heebo', sans-serif;
 z-index:100;
 bottom: 1vh;
 top: auto;
-font-size:14px;
-font-family: 'Heebo', sans-serif;
+font-size:80%;
 text-align:center;
 width: 100%;
 }
@@ -134,6 +133,7 @@ width: 100%;
   }
   #group1 .parallax__layer--base {
     /* background: rgb(102,204,102); */
+    background: black;
   }
 
   #group2 {
@@ -141,7 +141,7 @@ width: 100%;
   }
   #group2 .parallax__layer--back {
     /* background: rgb(123,210,102); */
-    background: black;
+    background-color: black;
   }
 
   #group3 {
@@ -149,20 +149,22 @@ width: 100%;
   }
   #group3 .parallax__layer--base {
     /* background: rgb(153,216,101); */
+    background-color: black;
   }
 
   #group4 {
     z-index: 2; /* slide under group 3 and 5 */
   }
   #group4 .parallax__layer--deep {
-    /* background: rgb(184,223,101); */
+    background: rgb(184,223,101);
   }
 
   #group5 {
     z-index: 3; /* slide over group 4 and 6 */
   }
   #group5 .parallax__layer--base {
-    background: rgb(214,229,100);
+    /* background: rgb(2141,229,100); */
+    background-color: black;
   }
 
   #group6 {

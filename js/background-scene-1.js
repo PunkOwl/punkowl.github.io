@@ -1,5 +1,5 @@
 let backgroundWave = function(p) {
-    var nmobiles=4000;
+    var nmobiles=7500;
     var mobiles=[];
     var noisescale;
     var a1, a2, a3, a4, a5, amax;
@@ -16,8 +16,8 @@ let backgroundWave = function(p) {
     
     p.reset = function() {
         noisescale=p.random(.08, .1);
-        p.noiseDetail(p.int(p.random(1,5)));
-        amax=p.random(5);
+        p.noiseDetail(p.int(p.random(1,2)));
+        amax=p.random(3);
         a1=p.random(1, amax);
         a2=p.random(1, amax);
         a3=p.random(1, amax);
