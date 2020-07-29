@@ -88,9 +88,9 @@ hr {
 
 .project-details {
     color: #c9c9c9;
-    font-size: 12px;
+    font-size: 15px;
     padding-left: 22px;
-    width: 410px;
+    width: 460px;
 }
 
 .project-details a {
@@ -113,12 +113,12 @@ hr {
     background-color: black;
     font-family: 'Heebo', sans-serif;
     color: white;
-    width: 400px;
+    width: 420px;
     margin: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 5px;
-    padding-left: 20px;
+    padding-left: 24px;
 }
 
 .member-title {
@@ -128,7 +128,7 @@ hr {
 }
 
 .member-desc{
-    font-size: 13px;
+    font-size: 16px;
     color: #e0e0e0;
 }
 
