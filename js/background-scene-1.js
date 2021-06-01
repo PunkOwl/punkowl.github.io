@@ -10,7 +10,7 @@ let backgroundWave = function(p) {
         p.background(0);
         p.noFill();  
         p.colorMode(p.HSB, 360, 255, 255, 255);
-        p.strokeWeight(.1);
+        p.strokeWeight(1.0);
         p.reset();
     }
     
